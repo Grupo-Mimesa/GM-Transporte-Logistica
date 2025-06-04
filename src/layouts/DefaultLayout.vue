@@ -8,14 +8,14 @@
           </a>
           <div class="collapse navbar-collapse" id="navbarText">
           <span class="navbar-text fs-5">
-            <strong>Registro de Cotizaciones</strong>
+            <strong>Registro de carga</strong>
           </span>
         </div>
         </div>
       </nav>
     </header>
 
-    <main>
+    <main class="bg-body-tertiary">
       <slot />
     </main>
 
