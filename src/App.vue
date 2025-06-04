@@ -1,5 +1,5 @@
 <script setup>
-import AsignacionForm from './views/AsignacionForm.vue'
+import AsignacionForm from '@/views/AsignacionForm.vue'
 </script>
 
 <template>
