@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'gilroy-light';
-  src: url('../fonts/Gilroy-Light.ttf') format('truetype');
+  src: url('./assets/fonts/Gilroy-Light.ttf') format('truetype');
 }
 
 body {
