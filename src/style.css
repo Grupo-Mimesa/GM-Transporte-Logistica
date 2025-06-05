@@ -3,6 +3,6 @@
   src: url('./assets/fonts/Gilroy-Light.ttf') format('truetype');
 }
 
-body {
+* {
   font-family: 'gilroy-light', sans-serif;
 }
