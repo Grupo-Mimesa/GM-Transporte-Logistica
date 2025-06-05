@@ -109,6 +109,7 @@ const submitForm = async () => {
   }).then((response) => {
     if (response.ok) {
       alert("Datos enviados correctamente!");
+      asignacion.value = {}
     } else {
       alert("Error al enviar datos.");
     }
