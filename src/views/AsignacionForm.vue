@@ -1,6 +1,6 @@
 <template>
   <DefaultLayout>
-    <div class="container p-4">
+    <section class="container p-4">
       <div class="row justify-content-center">
           <div class="col-md-10">
             <div class="card p-4">
@@ -78,7 +78,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
   </DefaultLayout>
 </template>
 
@@ -99,7 +99,9 @@ const asignacion = ref({
 });
 
 const submitForm = async () => {
-  const formData = {...asignacion};
+  asignacion.value.Cedula = asignacion.value.Cedula.toString();
+  const formData = {...asignacion.value};
+  console.log("Datos a enviar:", formData);
   fetch(import.meta.env.VITE_SUBMIT_ASIGNACION_API, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
