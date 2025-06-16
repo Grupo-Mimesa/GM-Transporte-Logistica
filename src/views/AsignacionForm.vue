@@ -19,11 +19,6 @@
               </div>
 
               <div class="mb-3">
-                <label for="placa" class="form-label fw-semibold">Placa:</label>
-                <input type="text" class="form-control" id="placa" name="placa" v-model="asignacion.Placa" required>
-              </div>
-
-              <div class="mb-3">
                 <label for="cedula" class="form-label fw-semibold"
                   >Cedula de Identidad:</label
                 >
@@ -38,6 +33,11 @@
               </div>
 
               <div class="mb-3">
+                <label for="placa" class="form-label fw-semibold">Placa:</label>
+                <input type="text" class="form-control" id="placa" name="placa" v-model="asignacion.Placa" required>
+              </div>
+
+              <div class="mb-3">
                 <label for="fecha" class="form-label fw-semibold">Fecha:</label>
                 <input type="date" class="form-control" id="fecha" name="fecha" v-model="asignacion.Fecha" required>
               </div>
@@ -48,9 +48,7 @@
               </div>
 
               <div class="mb-3">
-                <label for="tm" class="form-label fw-semibold"
-                  >TM:</label
-                >
+                <label for="tm" class="form-label fw-semibold">TM:</label>
                 <input
                   type="number"
                   class="form-control"
@@ -89,8 +87,8 @@ import { ref } from "vue";
 const asignacion = ref({
   NombreTransporte: '',
   NombreChofer: '',
-  Placa: '',
   Cedula: '',
+  Placa: '',
   Fecha: null,
   SKU: '',
   TM: null,
